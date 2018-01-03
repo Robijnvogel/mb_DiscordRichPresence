@@ -123,7 +123,7 @@ namespace MusicBeePlugin
             
             string song = trackTitle + " ~ " + artist;
             if (string.IsNullOrEmpty(artist)) { song = trackTitle; }
-            string details = rating + "out of 5 stars - played " + playcount + " times";
+            string details = rating + " out of 5 stars - played " + playcount + " times";
             //string duration = mbApiInterface.NowPlaying_GetFileProperty(FilePropertyType.Duration);
             int position = mbApiInterface.Player_GetPosition();
             string artwork = mbApiInterface.NowPlaying_GetArtwork();
